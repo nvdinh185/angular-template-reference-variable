@@ -1,0 +1,5 @@
+<!-- Sử dụng template refrence variable để lấy giá trị của một phần tử -->
+<!-- Phải có ngModel mới lấy giá trị được -->
+<!-- Phải import thư viện FormsModule từ @angular/forms -->
+<input placeholder="Enter your username" ngModel #txtUsername>
+<h3>Your name is {{ txtUsername.value | json }}</h3>
